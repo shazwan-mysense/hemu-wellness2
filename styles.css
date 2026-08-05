@@ -199,9 +199,10 @@ ul{ padding:0; list-style:none; }
 }
 
 /* rotating headline, top-left */
-.hero__head{ position:relative; min-height:2.1em; }
+/* grid-stack so the block matches the longest slide at any width */
+.hero__head{ display:grid; }
 .hero__line{
-  display:block;
+  grid-area:1 / 1;
   font-size:clamp(38px, 5.4vw, 78px);
   font-weight:400;
   line-height:1.05;
@@ -211,7 +212,6 @@ ul{ padding:0; list-style:none; }
   /* faster than the background so stacked text doesn't ghost through itself */
   transition:opacity .3s ease, visibility .3s ease;
 }
-.hero__line:not(:first-child){ position:absolute; inset:0; }
 .hero__line.is-on{ opacity:1; visibility:visible; }
 /* incoming waits for the outgoing to clear, so large type never ghosts */
 .hero__line.is-on{ transition-delay:.2s; }
@@ -253,9 +253,9 @@ ul{ padding:0; list-style:none; }
   /* fixed width + reserved height so the rotating lines can't push into the CTA */
   width:min(430px, 44vw);
 }
-.hero__sub{ position:relative; min-height:2.6em; }
+.hero__sub{ display:grid; }
 .hero__subline{
-  display:block;
+  grid-area:1 / 1;
   font-size:clamp(19px, 2.1vw, 30px);
   font-weight:400;
   line-height:1.24;
@@ -264,7 +264,6 @@ ul{ padding:0; list-style:none; }
   visibility:hidden;
   transition:opacity .3s ease, visibility .3s ease;
 }
-.hero__subline:not(:first-child){ position:absolute; inset:0; }
 .hero__subline.is-on{ opacity:1; visibility:visible; }
 .hero__subline.is-on{ transition-delay:.2s; }
 
