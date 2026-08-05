@@ -3,373 +3,281 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hemu Wellness — Traditional Chinese Medicine &amp; Physiotherapy, Solaris Dutamas</title>
-<meta name="description" content="Acupuncture, herbal medicine, tui na and physiotherapy in Solaris Dutamas, Kuala Lumpur. Unhurried consultations that look for the cause, not just the symptom.">
+<title>Hemu Wellness — Women's Health, Fertility Support &amp; TCM, Solaris Dutamas</title>
+<meta name="description" content="Women's health in Solaris Dutamas, Kuala Lumpur. Fertility support alongside IVF and IUI, cycle and uterine care, postpartum recovery and menopause — with Chinese medicine and physiotherapy.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Noto+Serif+SC:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Noto+Serif+SC:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=1">
 </head>
 <body>
 
 <!-- ══════════════  header  ══════════════ -->
 <header class="nav" id="nav">
-  <div class="nav__bar">
-    <a class="brand" href="#top">
-      <span class="brand__mark" aria-hidden="true">
-        <i></i><i></i><i></i><i></i>
-      </span>
-      <span class="brand__text">Hemu<sup>和睦</sup></span>
-    </a>
+  <a class="brand" href="#top">
+    <span class="brand__en">Hemu</span><span class="brand__cn">和睦</span>
+  </a>
 
-    <nav class="nav__links">
-      <a href="#top">Home</a>
-      <a href="#about">About</a>
-      <a href="#treatments">Treatments</a>
-      <a href="#visit">Visit</a>
-    </nav>
+  <nav class="nav__links">
+    <a href="#stages">Women's health</a><i>•</i>
+    <a href="#treatments">Treatments</a><i>•</i>
+    <a href="#approach">Approach</a><i>•</i>
+    <a href="#faq">FAQ</a><i>•</i>
+    <a href="#visit">Visit</a>
+  </nav>
 
-    <a href="#visit" class="btn btn--coral nav__cta">Book a visit</a>
-
-    <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span>
-    </button>
+  <div class="nav__act">
+    <a href="#visit" class="pill pill--dark">Book a visit</a>
+    <a href="#visit" class="orb" aria-label="Book a visit"><span></span></a>
+    <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
   </div>
 
   <div class="nav__drawer" id="drawer">
-    <a href="#about">About</a>
+    <a href="#stages">Women's health</a>
     <a href="#treatments">Treatments</a>
+    <a href="#approach">Approach</a>
+    <a href="#faq">FAQ</a>
     <a href="#visit">Visit</a>
-    <a href="#visit" class="btn btn--coral">Book a visit</a>
+    <a href="#visit" class="pill pill--dark">Book a visit</a>
   </div>
 </header>
 
 <!-- ══════════════  hero  ══════════════ -->
 <section class="hero" id="top">
-  <div class="hero__panel">
-    <h1 class="hero__title">
-      A quiet space for the body to <span>find its balance</span>
+  <div class="hero__stage">
+    <img class="hero__bg is-on" data-slide="0" src="images/hero-room.jpg" alt="A patient resting during treatment at Hemu Wellness" fetchpriority="high">
+    <img class="hero__bg" data-slide="1" src="images/wh-pregnancy.jpg" alt="An expectant mother resting at home">
+    <img class="hero__bg" data-slide="2" src="images/hero3-bg.jpg" alt="A woman in midlife during a treatment session">
+    <div class="hero__veil"></div>
+  </div>
+
+  <div class="hero__top">
+    <h1 class="hero__head">
+      <span class="hero__line is-on" data-slide="0">Treat the Root.<br>Not the Branch.</span>
+      <span class="hero__line" data-slide="1">Trying, Waiting,<br>Counting Days.</span>
+      <span class="hero__line" data-slide="2">The Change,<br>And After It.</span>
     </h1>
-
-    <p class="hero__lead">
-      Acupuncture, herbal medicine and physiotherapy in Solaris Dutamas —
-      for people who would rather understand their body than silence it.
-    </p>
-
-    <a href="#treatments" class="btn btn--ghost">See our treatments <i class="glyph"></i></a>
-
-    <div class="hero__card">
-      <img src="images/hero-inset.jpg" alt="Acupuncture needles placed along the shoulder">
-      <div class="hero__card-body">
-        <strong>A first visit<br>takes an hour</strong>
-        <span>Pulse, tongue, history, and a proper conversation</span>
-      </div>
-    </div>
-
-    <p class="hero__fine">Registered traditional &amp; complementary practitioners</p>
   </div>
 
-  <figure class="hero__shot">
-    <img src="images/hero-room.jpg" alt="A patient resting during treatment at Hemu Wellness" fetchpriority="high">
-  </figure>
-</section>
+  <div class="hero__foot">
+    <ul class="hero__feats">
+      <li>
+        <i class="mk mk--hour" aria-hidden="true"></i>
+        <div><b>A full hour</b><span>Every first consultation — pulse, tongue, history, and a proper conversation.</span></div>
+      </li>
+      <li>
+        <i class="mk mk--two" aria-hidden="true"></i>
+        <div><b>Two disciplines</b><span>Chinese medicine and physiotherapy under one roof, so nothing is treated alone.</span></div>
+      </li>
+      <li>
+        <i class="mk mk--leaf" aria-hidden="true"></i>
+        <div><b>Herbs you can check</b><span>Taiwan-sourced, batch-tested for heavy metals and pesticide residue.</span></div>
+      </li>
+    </ul>
 
-<!-- ══════════════  how we work  ══════════════ -->
-<section class="sec" id="about">
-  <p class="sec__label">(How we work)</p>
-  <h2 class="sec__title">Care for people who<br><span>choose harmony</span></h2>
-
-  <div class="benefits">
-    <figure class="benefits__shot reveal">
-      <img src="images/about-portrait.jpg" alt="A patient sitting quietly before her consultation">
-    </figure>
-
-    <div class="benefits__stat reveal">
-      <div class="benefits__big">
-        <strong>60 min</strong>
-        <span>Every first consultation</span>
-      </div>
-      <div class="benefits__pills">
-        <p><b>2</b> Disciplines under one roof</p>
-        <p><b>6</b> Treatments to draw from</p>
-      </div>
-    </div>
-
-    <figure class="benefits__shot reveal">
-      <img src="images/benefit-calm.jpg" alt="A patient resting quietly during treatment">
-    </figure>
-  </div>
-
-  <ul class="ticks reveal">
-    <li>Unhurried first consultation</li>
-    <li>Pulse and tongue diagnosis</li>
-    <li>TCM and physiotherapy together</li>
-    <li>Taiwan-sourced herbs</li>
-    <li>Plans adjusted as you change</li>
-  </ul>
-</section>
-
-<!-- ══════════════  treatments bento  ══════════════ -->
-<section class="sec" id="treatments">
-  <p class="sec__label">(Treatments)</p>
-  <h2 class="sec__title">Find the treatment<br><span>that fits your body</span></h2>
-
-  <div class="bento">
-    <article class="bento__photo reveal">
-      <img src="images/tx-acupuncture.jpg" alt="Acupuncture needles placed along the shoulder">
-      <div class="bento__photo-body">
-        <h3>Acupuncture <em>针灸</em></h3>
-        <p>Fine needles at specific points to move stagnant circulation and calm an overactive system.</p>
-        <div class="bento__chip">
-          <strong>30–45 min</strong>
-          <span>Typical session<br>Needles stay in 20 min</span>
-        </div>
-      </div>
-    </article>
-
-    <article class="bento__data reveal">
-      <h3>Herbal medicine <em>中药</em></h3>
-
-      <div class="databox">
-        <strong>Taiwan</strong>
-        <span>Sourced and batch-tested</span>
-      </div>
-
-      <p class="bento__note">
-        Our raw herbs are sourced from Taiwan and arrive batch-tested for heavy
-        metals and pesticide residue.
+    <div class="hero__aside">
+      <p class="hero__sub">
+        <span class="hero__subline is-on" data-slide="0">Women's health, from the years<br>spent trying to the years after.</span>
+        <span class="hero__subline" data-slide="1">Support alongside IVF and IUI,<br>or while you are trying naturally.</span>
+        <span class="hero__subline" data-slide="2">Care through menopause and<br>the years on either side of it.</span>
       </p>
-
-      <div class="metrics">
-        <div><b>Heavy metals</b><span>Tested every batch</span></div>
-        <div><b>Pesticide residue</b><span>Tested every batch</span></div>
-      </div>
-    </article>
+      <a href="#visit" class="pill pill--pale">Book a first consultation <i class="orb orb--sm"><span></span></i></a>
+    </div>
   </div>
 
-  <div class="cards">
-    <article class="card reveal">
-      <figure><img src="images/tx-tuina.jpg" alt="Hands working along a patient's shoulder during tui na"></figure>
-      <h3>Tui na <em>推拿</em></h3>
-      <p>Deep, structured Chinese bodywork for necks, shoulders and lower backs that have stopped letting go.</p>
+  <div class="hero__bars" role="tablist" aria-label="Choose a slide">
+    <button class="is-on" data-go="0" role="tab" aria-selected="true"  aria-label="Our approach"></button>
+    <button              data-go="1" role="tab" aria-selected="false" aria-label="Fertility support"></button>
+    <button              data-go="2" role="tab" aria-selected="false" aria-label="Menopause care"></button>
+  </div>
+</section>
+
+<!-- ══════════════  statement  ══════════════ -->
+<section class="say" id="approach">
+  <p class="say__tag reveal"><i class="ast" aria-hidden="true"></i> Ready to stop guessing what your body is doing?</p>
+  <h2 class="say__head reveal">
+    Women's Health, Chinese Medicine and Physiotherapy — Under One Roof.
+  </h2>
+</section>
+
+<!-- ══════════════  stage rail  ══════════════ -->
+<section class="rail-wrap" id="stages">
+  <div class="rail" id="rail">
+
+    <article class="tile reveal">
+      <img src="images/tx-moxa.jpg" alt="A moxa stick held over points along the back">
+      <div class="tile__grad"></div>
+      <div class="tile__top">
+        <p class="tile__cn">备孕 <em>bèi yùn</em></p>
+        <p class="tile__name">Trying to conceive<span>Fertility support</span></p>
+        <span class="pips"><i></i><i></i><i></i><i></i></span>
+      </div>
+      <p class="tile__note">
+        Support alongside IVF and IUI, or while you are trying naturally — circulation,
+        cycle regularity, sleep, and the strain the waiting itself puts on a body.
+      </p>
     </article>
 
-    <article class="card reveal">
-      <figure><img src="images/tx-cupping.jpg" alt="Glass cups being applied along the back"></figure>
-      <h3>Cupping <em>拔罐</em></h3>
-      <p>Suction that draws blood to the surface and releases the tight fascia underneath. Yes, it leaves marks.</p>
+    <article class="tile reveal">
+      <img src="images/tx-acupuncture.jpg" alt="Acupuncture needles placed along the shoulder">
+      <div class="tile__grad"></div>
+      <div class="tile__top">
+        <p class="tile__cn">调经 <em>tiáo jīng</em></p>
+        <p class="tile__name">Cycles and uterine care<span>Menstrual health</span></p>
+        <span class="pips"><i></i><i></i><i></i><i></i></span>
+      </div>
+      <p class="tile__note">
+        Period pain, irregular or absent cycles, and the uterine circulation sitting
+        underneath both.
+      </p>
     </article>
 
-    <article class="card reveal">
-      <figure><img src="images/tx-physio.jpg" alt="A therapist working through a patient's upper back"></figure>
-      <h3>Physiotherapy <em>物理治疗</em></h3>
-      <p>Hands-on rehab and loading work for sports injuries, sprains and postpartum recovery.</p>
+    <article class="tile reveal">
+      <img src="images/about-portrait.jpg" alt="An expectant mother with her physician in morning light">
+      <div class="tile__grad"></div>
+      <div class="tile__top">
+        <p class="tile__cn">产后调理 <em>chǎn hòu</em></p>
+        <p class="tile__name">Pregnancy and postpartum<span>Recovery</span></p>
+        <span class="pips"><i></i><i></i><i></i><i></i></span>
+      </div>
+      <p class="tile__note">
+        Physiotherapy through pregnancy, and the long recovery after — pelvic floor,
+        back and shoulders, sleep, and rebuilding what was borrowed.
+      </p>
     </article>
 
-    <article class="card reveal">
-      <figure><img src="images/tx-womens.jpg" alt="A patient in consultation with her physician"></figure>
-      <h3>Women's health <em>妇科调理</em></h3>
-      <p>Support for menstrual pain, irregular cycles, uterine circulation and the months after birth.</p>
+    <article class="tile reveal">
+      <img src="images/card-menopause.jpg" alt="A patient in midlife before her consultation">
+      <div class="tile__grad"></div>
+      <div class="tile__top">
+        <p class="tile__cn">更年期 <em>gēng nián qī</em></p>
+        <p class="tile__name">Menopause<span>And the years around it</span></p>
+        <span class="pips"><i></i><i></i><i></i><i></i></span>
+      </div>
+      <p class="tile__note">
+        Hot flushes, broken sleep, low mood and aching joints. Care for the whole
+        passage, not only its worst weeks.
+      </p>
     </article>
+
+    <article class="tile reveal">
+      <img src="images/tx-physio.jpg" alt="A therapist working through a patient's upper back">
+      <div class="tile__grad"></div>
+      <div class="tile__top">
+        <p class="tile__cn">筋骨 <em>jīn gǔ</em></p>
+        <p class="tile__name">Pain and injury<span>Physiotherapy</span></p>
+        <span class="pips"><i></i><i></i><i></i><i></i></span>
+      </div>
+      <p class="tile__note">
+        Necks, shoulders and lower backs that loosen for a day and tighten again.
+        Sports injuries, sprains and strains that have stalled.
+      </p>
+    </article>
+
+    <article class="tile reveal">
+      <img src="images/tx-herbal.jpg" alt="Dried Chinese herbs in a wooden bowl">
+      <div class="tile__grad"></div>
+      <div class="tile__top">
+        <p class="tile__cn">中药 <em>zhōng yào</em></p>
+        <p class="tile__name">Herbal medicine<span>Taiwan-sourced</span></p>
+        <span class="pips"><i></i><i></i><i></i><i></i></span>
+      </div>
+      <p class="tile__note">
+        Formulas for cycles, fertility support and postpartum recovery, built from raw
+        herbs and adjusted as your case changes.
+      </p>
+    </article>
+
+  </div>
+  <p class="rail__hint">Drag to see more</p>
+</section>
+
+<!-- ══════════════  stat statement  ══════════════ -->
+<section class="say say--tight">
+  <h2 class="say__head reveal">
+    Every Stage. Every Cycle.<br>
+    Six treatments, two disciplines.
+  </h2>
+</section>
+
+<!-- ══════════════  four pillars  ══════════════ -->
+<section class="grid4">
+  <article class="reveal">
+    <i class="glyph glyph--a" aria-hidden="true"></i>
+    <h3>No Rushing. No Packages.</h3>
+    <p>A first visit takes a full hour, and you leave with a plan rather than a signed-up bundle of sessions.</p>
+  </article>
+  <article class="reveal">
+    <i class="glyph glyph--b" aria-hidden="true"></i>
+    <h3>Root, Not Branch.</h3>
+    <p>Pulse, tongue, history and a proper conversation. We work back from the symptom to what is driving it.</p>
+  </article>
+  <article class="reveal">
+    <i class="glyph glyph--c" aria-hidden="true"></i>
+    <h3>Alongside Your Clinic.</h3>
+    <p>We work with your fertility clinic and your doctor, never instead of them. Bring your dates and results.</p>
+  </article>
+  <article class="reveal">
+    <i class="glyph glyph--d" aria-hidden="true"></i>
+    <h3>Adjusted As You Change.</h3>
+    <p>Formulas and treatment shift with your cycle and your case, rather than running to a fixed script.</p>
+  </article>
+</section>
+
+<!-- ══════════════  treatments  ══════════════ -->
+<section class="tx" id="treatments">
+  <div class="tx__head reveal">
+    <p class="say__tag"><i class="ast" aria-hidden="true"></i> What we actually do</p>
+    <h2 class="say__head say__head--md">Seven ways in.<br>One system underneath.</h2>
+  </div>
+
+  <div class="tx__list">
+    <article class="reveal"><h3>Acupuncture <span>针灸</span></h3><p>Fine needles at specific points to move stagnant circulation and calm an overactive system.</p></article>
+    <article class="reveal"><h3>Moxibustion <span>艾灸</span></h3><p>Gentle warmth held over specific points — often used through the luteal phase and after birth.</p></article>
+    <article class="reveal"><h3>Tui na <span>推拿</span></h3><p>Deep, structured Chinese bodywork for necks, shoulders and lower backs that have stopped letting go.</p></article>
+    <article class="reveal"><h3>Cupping <span>拔罐</span></h3><p>Suction that draws blood to the surface and releases the tight fascia underneath. Yes, it leaves marks.</p></article>
+    <article class="reveal"><h3>Herbal medicine <span>中药</span></h3><p>Formulas built for your case and adjusted as it changes. Taiwan-sourced, batch-tested, no guesswork.</p></article>
+    <article class="reveal"><h3>Physiotherapy <span>物理治疗</span></h3><p>Hands-on rehab and loading work for sports injuries, sprains and postpartum recovery.</p></article>
+    <article class="reveal"><h3>Women's health <span>妇科调理</span></h3><p>Fertility support, cycle and uterine care, postpartum recovery and the years around menopause.</p></article>
   </div>
 </section>
 
 <!-- ══════════════  dark: root cause  ══════════════ -->
-<section class="dark">
-  <div class="dark__inner">
-    <div class="dark__copy">
-      <p class="dark__eyebrow">Why we ask so many questions</p>
-      <p class="dark__cn">治病求本</p>
-      <h2 class="dark__title">Treat the root,<br>not the branch</h2>
-      <p class="dark__body">
-        A symptom is where the body speaks. It is rarely where the trouble began.
-        A first visit takes an hour because your physician will ask about your sleep,
-        your appetite and your stress before deciding what to treat — in Chinese
-        medicine those are not side notes, they are the case.
+<section class="deep">
+  <div class="deep__inner">
+    <div class="deep__copy">
+      <p class="say__tag say__tag--light"><i class="ast" aria-hidden="true"></i> Why we ask so many questions</p>
+      <p class="deep__cn">治病求本</p>
+      <h2 class="deep__head">A symptom is where the body speaks. It is rarely where the trouble began.</h2>
+      <p class="deep__body">
+        Cycle, sleep, digestion and mood are read as one system. A difficult period and a
+        difficult night are not separate problems here — which is why the first visit asks
+        about all of it before anything is decided.
       </p>
-      <p class="dark__fine">Pulse · Tongue · History · Conversation</p>
+      <a href="#visit" class="pill pill--pale">Book a first consultation <i class="orb orb--sm"><span></span></i></a>
     </div>
 
-    <div class="dark__card">
-      <figure class="dark__shot">
-        <img src="images/about-herbs.jpg" alt="Dried herbs, a mortar and a handwritten formula on a work table">
-      </figure>
-      <h3>One system, three angles</h3>
-      <p class="dark__cardnote">
-        Acupuncture, cupping and tui na work on one system from different angles.
-        Circulation opens, held tension lets go, and the nervous system settles
-        enough for the body to do its own repair.
-      </p>
-      <ul class="dots">
-        <li>Circulation opens</li>
-        <li>Held tension lets go</li>
-        <li>The nervous system settles</li>
-      </ul>
-      <a href="#visit" class="btn btn--coral btn--block">Book a first consultation <i class="glyph"></i></a>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════  how it works  ══════════════ -->
-<section class="sec">
-  <p class="sec__label">(Your first visit)</p>
-  <h2 class="sec__title">What actually happens<br><span>when you come in</span></h2>
-
-  <div class="steps reveal">
-    <div class="steps__tabs">
-      <button class="is-on" data-step="0">Consultation</button>
-      <button data-step="1">Diagnosis</button>
-      <button data-step="2">Treatment plan</button>
-    </div>
-
-    <div class="steps__body">
-      <div class="steps__panes">
-      <div class="steps__pane is-on">
-        <p>
-          Every consultation starts the same way — pulse, tongue, history, and a
-          proper conversation. Nothing is rushed and nothing is decided before we
-          have heard the whole picture.
-        </p>
-        <ul class="dots dots--dark">
-          <li>A full hour, not fifteen minutes</li>
-          <li>No referral needed</li>
-          <li>Bring recent scans or blood work if you have them</li>
-        </ul>
-      </div>
-
-      <div class="steps__pane">
-        <p>
-          Your physician reads the pulse at both wrists and looks at the tongue,
-          then works back from the symptom to what is driving it. Most people are
-          seen by both a TCM physician and a physiotherapist.
-        </p>
-        <ul class="dots dots--dark">
-          <li>Pulse and tongue diagnosis</li>
-          <li>Assessed by both disciplines where it helps</li>
-          <li>You get told what we found, in plain language</li>
-        </ul>
-      </div>
-
-      <div class="steps__pane">
-        <p>
-          What follows depends entirely on what we find. Treatment may combine
-          needles, bodywork, cupping or a herbal formula, and it gets adjusted as
-          your case changes rather than run to a fixed script.
-        </p>
-        <ul class="dots dots--dark">
-          <li>Built around your case, not a package</li>
-          <li>Formulas adjusted as you change</li>
-          <li>You will be told roughly how many sessions to expect</li>
-        </ul>
-      </div>
-      </div>
-
-      <figure class="steps__shot">
-        <img src="images/detail-needles.jpg" alt="A hand with acupuncture needles in soft window light">
-      </figure>
-    </div>
-
-    <div class="steps__chips">
-      <span>Pain &amp; injury</span>
-      <span>Menstrual health</span>
-      <span>Sleep &amp; stress</span>
-      <span>Postpartum recovery</span>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════  why hemu  ══════════════ -->
-<section class="why">
-  <div class="why__panel">
-    <div class="why__head">
-      <h2>Why people come<br>to Hemu</h2>
-      <a href="#visit" class="btn btn--coral">Book a visit <i class="glyph"></i></a>
-    </div>
-
-    <div class="why__grid">
-      <div>
-        <h3>Unhurried by design</h3>
-        <p>A first visit takes an hour, and nobody is rushed back out the door.</p>
-      </div>
-      <div>
-        <h3>Two disciplines, one roof</h3>
-        <p>TCM and physiotherapy in the same clinic, so nothing gets treated in isolation.</p>
-      </div>
-      <div>
-        <h3>Herbs you can check</h3>
-        <p>Taiwan-sourced and batch-tested for heavy metals and pesticide residue.</p>
-      </div>
-    </div>
-
-    <figure class="why__shot">
-      <img src="images/visit-detail.jpg" alt="Needles being placed around the knee during treatment">
+    <figure class="deep__shot">
+      <img src="images/about-herbs.jpg" alt="Dried herbs, a mortar and a handwritten formula on a work table">
     </figure>
   </div>
 </section>
 
-<!-- ══════════════  reasons people come in  ══════════════ -->
-<section class="sec">
-  <p class="sec__label">(What we see most)</p>
-  <h2 class="sec__title">Common reasons<br><span>people come in</span></h2>
-
-  <div class="reasons">
-    <article class="reason reveal">
-      <h3>Pain that keeps coming back</h3>
-      <p>Necks, shoulders and lower backs that loosen for a day and then tighten again. Sports injuries, sprains and strains that have stalled.</p>
-      <span>Acupuncture · Tui na · Cupping · Physiotherapy</span>
-    </article>
-
-    <article class="reason reveal">
-      <h3>Cycles that are hard work</h3>
-      <p>Menstrual pain, irregular cycles, and the long months of postpartum recovery when everything feels borrowed.</p>
-      <span>Women's health · Herbal medicine · Physiotherapy</span>
-    </article>
-
-    <article class="reason reveal">
-      <h3>Sleeping badly, running hot</h3>
-      <p>Poor sleep, low energy, appetite that has changed, a body that has been carrying stress for long enough to show it.</p>
-      <span>Acupuncture · Herbal medicine</span>
-    </article>
-  </div>
-</section>
-
-<!-- ══════════════  first visit / pricing  ══════════════ -->
-<section class="price">
-  <div class="price__inner">
-    <div class="price__copy">
-      <h2>Your first<br><span>visit</span></h2>
-      <p>
-        One appointment, one hour, and a clear answer about whether we can help.
-        If we are not the right people for your case we will say so.
-      </p>
-      <ul class="ticks ticks--stack">
-        <li>Full hour with a TCM physician</li>
-        <li>Pulse and tongue diagnosis</li>
-        <li>First treatment included</li>
-        <li>A plan you can actually follow</li>
-        <li>No referral required</li>
-      </ul>
-    </div>
-
-    <div class="price__card">
-      <p class="price__note">Walk-ins welcome when we have a room free</p>
-      <p class="price__amount"><b>RM 120</b><span>/ first visit</span></p>
-      <p class="price__sub">Follow-up sessions from RM 90</p>
-      <a href="#visit" class="btn btn--coral btn--block">Book a first consultation <i class="glyph"></i></a>
-      <p class="price__tiny">Indicative pricing for this concept — to be confirmed with the clinic.</p>
-    </div>
-  </div>
-</section>
-
 <!-- ══════════════  faq  ══════════════ -->
-<section class="sec sec--narrow">
-  <p class="sec__label">(Questions)</p>
-  <h2 class="sec__title">Things people ask<br><span>before booking</span></h2>
+<section class="faq" id="faq">
+  <div class="faq__head reveal">
+    <p class="say__tag"><i class="ast" aria-hidden="true"></i> Before you book</p>
+    <h2 class="say__head say__head--md">Things people ask.</h2>
+  </div>
 
-  <div class="faq reveal">
+  <div class="faq__list reveal">
     <details open>
       <summary>Does acupuncture hurt?</summary>
       <p>Not in the way people expect. The needles are about the width of a hair — most people feel a dull heaviness around the point rather than a sharp prick, and a lot of them fall asleep on the table.</p>
+    </details>
+    <details>
+      <summary>Can I do this while I'm going through IVF or IUI?</summary>
+      <p>Yes, and it is one of the most common reasons people come to us. Tell us your protocol and your dates — knowing where you are in a cycle changes what we do and when. We work alongside your fertility clinic, never instead of it.</p>
     </details>
     <details>
       <summary>Do I need a referral?</summary>
@@ -379,94 +287,39 @@
       <summary>How many sessions will I need?</summary>
       <p>It depends entirely on the case, and you will be given a rough number after the first visit rather than being signed up to a package. Something acute may take two or three sessions; something you have carried for years takes longer.</p>
     </details>
-    <details>
-      <summary>Can I do this alongside my doctor's treatment?</summary>
-      <p>Yes, and you should tell us what you are already taking so your physician can account for it. We are not a replacement for the care you are already under.</p>
-    </details>
   </div>
 </section>
 
-<!-- ══════════════  closing cta  ══════════════ -->
-<section class="close" id="visit">
-  <div class="close__inner">
-    <h2>Come and sit with us <span>a while</span></h2>
-
-    <div class="close__right">
+<!-- ══════════════  visit + footer  ══════════════ -->
+<footer class="end" id="visit">
+  <div class="end__top">
+    <h2 class="end__head">Come and sit<br>with us a while.</h2>
+    <div class="end__act">
       <p>
         We are on the ground floor at Solaris Dutamas, a short walk from Publika.
-        Bring any recent scans or blood work if you have them — they help,
-        though they are not required.
+        Walk-ins welcome when we have a room free.
       </p>
-      <div class="close__btns">
-        <a href="#visit" class="btn btn--outline">Message us on WhatsApp</a>
-        <a href="#treatments" class="btn btn--coral">See treatments <i class="glyph"></i></a>
-      </div>
+      <a href="#visit" class="pill pill--pale">Message us on WhatsApp <i class="orb orb--sm"><span></span></i></a>
     </div>
   </div>
 
-  <dl class="close__facts">
-    <div>
-      <dt>Where</dt>
-      <dd>Jalan Dutamas 1, Solaris Dutamas<br>50480 Kuala Lumpur</dd>
-    </div>
-    <div>
-      <dt>Hours</dt>
-      <dd>Monday to Saturday, 10am – 7pm<br>Sunday by appointment</dd>
-    </div>
-    <div>
-      <dt>Reach us</dt>
-      <dd><a href="#visit">WhatsApp</a> · <a href="#visit">WeChat</a><br><a href="#visit">hello@hemuwellness.com</a></dd>
-    </div>
+  <dl class="end__facts">
+    <div><dt>Where</dt><dd>Jalan Dutamas 1, Solaris Dutamas<br>50480 Kuala Lumpur</dd></div>
+    <div><dt>Hours</dt><dd>Monday to Saturday, 10am – 7pm<br>Sunday by appointment</dd></div>
+    <div><dt>Reach us</dt><dd><a href="#visit">WhatsApp</a> · <a href="#visit">WeChat</a><br><a href="#visit">hello@hemuwellness.com</a></dd></div>
+    <div><dt>Follow</dt><dd><a href="#visit">Instagram</a><br><a href="#visit">Xiaohongshu</a></dd></div>
   </dl>
-</section>
 
-<!-- ══════════════  footer  ══════════════ -->
-<footer class="ftr">
-  <div class="ftr__top">
-    <div class="ftr__lead">
-      <h3>Stay close to<br>your own health</h3>
-      <p>Seasonal notes on sleep, cycles and recovery from our physicians. Once a month, never more.</p>
-      <form class="ftr__form" onsubmit="return false">
-        <input type="email" placeholder="Enter your email" aria-label="Email address">
-        <button class="btn btn--coral" type="submit">Subscribe</button>
-      </form>
-    </div>
-
-    <nav class="ftr__links">
-      <div>
-        <a href="#top">Home</a>
-        <a href="#about">About</a>
-        <a href="#treatments">Treatments</a>
-        <a href="#visit">Visit</a>
-      </div>
-      <div>
-        <a href="#treatments">Acupuncture</a>
-        <a href="#treatments">Herbal medicine</a>
-        <a href="#treatments">Physiotherapy</a>
-        <a href="#treatments">Women's health</a>
-      </div>
-      <div>
-        <a href="#visit">WhatsApp</a>
-        <a href="#visit">WeChat</a>
-        <a href="#visit">Contact</a>
-      </div>
-    </nav>
-  </div>
-
-  <div class="ftr__base">
-    <a class="brand brand--light" href="#top">
-      <span class="brand__mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
-      <span class="brand__text">Hemu<sup>和睦</sup></span>
-    </a>
-    <p class="ftr__fine">
-      Hemu Wellness Centre · Solaris Dutamas, Kuala Lumpur. Traditional and
-      complementary medicine services. Individual results vary and no treatment
-      outcome is guaranteed. Please consult your doctor about any ongoing
-      medical condition.
+  <div class="end__base">
+    <a class="brand brand--light" href="#top"><span class="brand__en">Hemu</span><span class="brand__cn">和睦</span></a>
+    <p>
+      Hemu Wellness Centre · Solaris Dutamas, Kuala Lumpur. Traditional and complementary
+      medicine services. Individual results vary and no treatment outcome is guaranteed.
+      Please consult your doctor about any ongoing medical condition.
     </p>
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js?v=1"></script>
 </body>
 </html>
