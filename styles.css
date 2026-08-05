@@ -213,6 +213,8 @@ ul{ padding:0; list-style:none; }
 }
 .hero__line:not(:first-child){ position:absolute; inset:0; }
 .hero__line.is-on{ opacity:1; visibility:visible; }
+/* incoming waits for the outgoing to clear, so large type never ghosts */
+.hero__line.is-on{ transition-delay:.2s; }
 
 .hero__foot{
   display:flex;
@@ -264,6 +266,7 @@ ul{ padding:0; list-style:none; }
 }
 .hero__subline:not(:first-child){ position:absolute; inset:0; }
 .hero__subline.is-on{ opacity:1; visibility:visible; }
+.hero__subline.is-on{ transition-delay:.2s; }
 
 .hero__bars{
   position:absolute;
