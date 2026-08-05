@@ -48,6 +48,16 @@ you edit either file** — otherwise browsers keep serving the cached copy.
 - "Come and sit with us a while", address, hours, contact
 - The footer disclaimer
 
+## The pregnancy arc section
+
+Sits directly after the hero, before the "Ready to stop guessing" statement, so the
+fertility and pregnancy work is the first thing on the page after the fold.
+
+Tag + big statement, a full-bleed warm band, then three hairline-separated stages —
+**备孕** (before, trying to conceive) · **安胎** (during, through pregnancy) ·
+**产后调理** (after, the fourth trimester) — closing on a note that we work alongside
+the fertility clinic and obstetrician rather than instead of them.
+
 ## Hero carousel
 
 Three slides on a **2-second hold**, matching mockup 1. Background, headline and
